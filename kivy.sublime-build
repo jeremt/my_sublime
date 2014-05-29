@@ -1,0 +1,8 @@
+{
+    // This command will run a kivy application from sublime text.
+    // Note: This is realy not the good way to do it, I should install the
+    // kivy command line tools properly.
+
+    "cmd": ["/Applications/Kivy.app/Contents/Resources/script", "$file"],
+    "working_dir": "${folder}"
+}

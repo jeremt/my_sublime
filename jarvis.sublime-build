@@ -1,0 +1,15 @@
+{
+	"cmd": ["jarvis", "-f", "$file"],
+	"env": {
+        "OSG_PREFIX":"/usr/local/osg/debug",
+        "PKG_CONFIG_PATH":"/usr/local/osg/debug/lib/pkgconfig/:$PKG_CONFIG_PATH",
+        "PATH":"/usr/local/osg/debug/bin:/usr/local/bin:/usr/local/sbin:/usr/bin:/bin:/usr/sbin",
+        "OSG_LIBRARY_PATH":"/usr/local/osg/debug/lib/",
+        "OSGDIR":"/usr/local/osg/debug/",
+        "OSG_ROOT":"/usr/local/osg/debug/",
+        "OSGSWIG_DIR_LIB":"/Users/jeremietaboada/Projects/Stupeflix/osgswig/build/lib/python/osgswig-3.1.3/",
+        "PYTHONPATH":"/Users/jeremietaboada/Projects/Stupeflix/osgswig/build/lib/python/osgswig-3.1.3/:$PYTHONPATH",
+
+        "DYLD_LIBRARY_PATH":"/Users/jeremietaboada/Projects/Stupeflix/osgswig/build/lib/python/osgswig-3.1.3/:/usr/local/osg/debug/lib/:$DYLD_LIBRARY_PATH"
+	}
+}

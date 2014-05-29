@@ -1,0 +1,10 @@
+{
+
+    // Simple command to run coffeescript projects.
+    // It will simply run the `cave dev` command defined in the Cakefile
+    // at the root of the projects.
+    // You can overide this rule to simply compile coffeescript in Javascript
+    // but also to run a server for instance.
+
+    "cmd": ["cake", "dev"]
+}

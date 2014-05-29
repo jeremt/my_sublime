@@ -1,0 +1,18 @@
+{
+
+    // Simple build system to run projects using cmake.
+    //
+    // The build system create a build directory if it doesnt exists, run cmake
+    // from command line and run the generated executable.
+    // The name of the executable to run is the variable set in the
+    // CMakeList.txt:
+    //
+    //  set(PROJECT_NAME my_project)
+    //
+
+    "cmd": [
+        "sh", "-c", "mkdir -p build && cd build && cmake .. && make && cd .. && ./`cat CMakeLists.txt  | grep 'set(PROJECT_NAME' | sed 's/set(PROJECT_NAME //' | cut -f1 -d ')'`"
+    ],
+    "selector": "source.c, source.c++, source.cmake",
+    "working_dir": "${folder}"
+}
